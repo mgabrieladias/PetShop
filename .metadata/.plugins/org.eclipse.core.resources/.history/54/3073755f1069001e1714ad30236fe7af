@@ -1,0 +1,23 @@
+package pacote5;
+
+import pacote3.Servico;
+import pacote1.Animal;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String nome = "Thor";
+		System.out.println(nome);
+		
+		Servico servico = new Servico(1,"Banho", 20.0);
+		System.out.println(servico.descricao());
+		System.out.println(servico.preco());
+		
+		Animal animal = new Animal(1 "Thor", "Cahorro", "Pastor Belga");
+		
+
+	}
+
+}

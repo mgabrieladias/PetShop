@@ -1,0 +1,19 @@
+package pacote5;
+
+import pacote3.Servico;
+import pacote1.Animal;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+
+		Servico servico1 = new Servico ("Banho", 20.0);
+		System.out.println(servico1.descricao());
+		System.out.println(servico1.preco());
+	
+		
+
+	}
+
+}

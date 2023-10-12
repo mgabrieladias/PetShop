@@ -1,0 +1,17 @@
+package pacote4;
+
+import java.time.LocalTime;
+import java.util.Date;
+import pacote1.Animal;
+
+
+public class Agenda extends Animal{
+	
+	private Animal animal;
+	private String servico;
+	private Date data;
+	private LocalTime horario;
+	
+
+
+}

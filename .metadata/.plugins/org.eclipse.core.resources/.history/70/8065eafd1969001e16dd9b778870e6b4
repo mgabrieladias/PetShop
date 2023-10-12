@@ -1,0 +1,38 @@
+package pacote3;
+
+
+public abstract class Servico {
+	
+	public abstract String descricao();
+	public abstract double preco();
+
+	
+	
+	public abstract class Banho extends Servico {
+
+		public Banho() {
+			super()
+		}
+
+		
+	}
+
+	public class Tosa extends Servico {
+
+		@Override
+		public String descricao() {
+			// TODO Auto-generated method stub
+			return "Tosa de Cachorro";
+		}
+
+		@Override
+		public double preco() {
+			// TODO Auto-generated method stub
+			return 30.0;
+		}
+		
+	}
+	
+	
+
+}

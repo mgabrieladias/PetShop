@@ -1,0 +1,19 @@
+package pacote5;
+
+import pacote3.Servico;
+
+public class Banho extends Servico {
+
+	@Override
+	public String descricao() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public double preco() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

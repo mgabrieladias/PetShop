@@ -1,0 +1,10 @@
+package pacote4;
+
+import pacote1.Animal;
+
+public class Agenda extends Animal{
+	
+	private String animal;
+	
+
+}

@@ -1,0 +1,15 @@
+package pacote5;
+
+import pacote3.Servico;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+
+
+		Servico servico1 = new Banho();
+		
+	}
+
+}

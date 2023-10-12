@@ -1,0 +1,18 @@
+package pacote4;
+
+import java.util.Date;
+
+import pacote1.Animal;
+
+public class Agenda extends Animal{
+	
+	public String animal;
+	public String servico;
+	public Date data;
+	
+	
+	
+	
+	
+
+}

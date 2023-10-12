@@ -1,0 +1,14 @@
+package pacote3;
+
+public abstract class Servico {
+	
+	public String descricao();
+	public double preco();
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

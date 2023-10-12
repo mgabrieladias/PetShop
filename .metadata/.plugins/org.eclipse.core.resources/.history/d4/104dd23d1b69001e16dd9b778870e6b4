@@ -1,0 +1,34 @@
+package pacote3;
+
+
+public abstract class Servico {
+	
+	public Servico(String string, double d) {
+		// TODO Auto-generated constructor stub
+		
+	}
+	public abstract String descricao();
+	public abstract double preco();
+
+	
+	
+	public abstract class Banho extends Servico {
+
+		public Banho() {
+			super("Banho", 20.0);
+		}
+
+		
+	}
+
+	public abstract class Tosa extends Servico {
+
+		public Tosa() {
+			super("Tosa", 30.0);
+		}
+		
+	}
+	
+	
+
+}

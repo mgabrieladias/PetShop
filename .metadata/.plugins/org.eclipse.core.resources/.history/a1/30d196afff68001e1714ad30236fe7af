@@ -1,0 +1,11 @@
+package pacote2;
+
+public class Produto {
+	
+	
+	public String nome;
+	public String categoria;
+	private double preco;
+	private int estoque;
+
+}

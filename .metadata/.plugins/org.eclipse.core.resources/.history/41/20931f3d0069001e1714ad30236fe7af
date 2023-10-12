@@ -1,0 +1,5 @@
+package pacote4;
+
+public class Agenda extends Animal{
+
+}

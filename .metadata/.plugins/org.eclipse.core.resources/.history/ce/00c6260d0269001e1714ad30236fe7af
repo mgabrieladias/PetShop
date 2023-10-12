@@ -1,0 +1,29 @@
+package pacote4;
+
+import java.time.LocalTime;
+import java.util.Date;
+import pacote1.Animal;
+
+
+public class Agenda extends Animal{
+	
+	public String animal;
+	public String servico;
+	public Date data;
+	public LocalTime horario;
+	
+	public Agenda(String nome, String especie, String raca, Date dataNascimento, String proprietario, String animal,
+			String servico, Date data, LocalTime horario) {
+		super(nome, especie, raca, dataNascimento, proprietario);
+		this.animal = animal;
+		this.servico = servico;
+		this.data = data;
+		this.horario = horario;
+	}
+	
+	
+	
+	
+	
+
+}

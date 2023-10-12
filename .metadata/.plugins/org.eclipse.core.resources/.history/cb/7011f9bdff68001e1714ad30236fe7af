@@ -1,0 +1,23 @@
+package pacote2;
+
+public class Produto {
+	
+	
+	public String nome;
+	public String categoria;
+	private double preco;
+	private int estoque;
+	
+	
+	public Produto(String nome, String categoria, double preco, int estoque) {
+		super();
+		this.nome = nome;
+		this.categoria = categoria;
+		this.preco = preco;
+		this.estoque = estoque;
+	}
+	
+	
+	
+
+}
