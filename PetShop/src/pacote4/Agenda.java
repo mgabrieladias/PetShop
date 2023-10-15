@@ -1,105 +1,30 @@
 package pacote4;
 
-import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.Date;
-import pacote1.Animal;
-import pacote3.Servico;
 
+import java.util.List;
 
 public class Agenda {
-	
-	
-	private Animal animal;
-	private Servico servico;
-	private Date data;
-	private LocalTime horario;
-	
-	
-public Agenda(Animal animal, Servico servico, Date data, LocalTime horario) {
-		super();
-		this.animal = animal;
-		this.servico = servico;
-		this.data = data;
-		this.horario = horario;
-	}
+    private List<Agendamento> agendamentos;
 
+    public Agenda() {
+        agendamentos = new ArrayList<>();
+    }
 
+    public boolean agendar(Agendamento novoAgendamento) {
+        // Verifica se o horário já está ocupado
+        for (Agendamento agendamento : agendamentos) {
+            if (agendamento.getData().equals(novoAgendamento.getData()) &&
+                agendamento.getHorario().equals(novoAgendamento.getHorario())) {
+                System.out.println("Horário já ocupado. Agendamento não realizado.");
+                return false;
+            }
+        }
 
-	public Animal getAnimal() {
-		return animal;
-	}
+        // Adiciona o novo agendamento à lista
+        agendamentos.add(novoAgendamento);
+        System.out.println("Agendamento realizado com sucesso.");
+        return true;
+    }
 
-
-
-	public void setAnimal(Animal animal) {
-		this.animal = animal;
-	}
-
-
-	public Servico getServico() {
-		return servico;
-	}
-
-
-
-	public void setServico(Servico servico) {
-		this.servico = servico;
-	}
-
-
-
-	public Date getData() {
-		return data;
-	}
-
-	
-
-	public void setData(Date data) {
-		this.data = data;
-	}
-
-
-
-	public LocalTime getHorario() {
-		return horario;
-	}
-
-
-
-	public void setHorario(LocalTime horario) {
-		this.horario = horario;
-	}
-
-
-
-@SuppressWarnings("null")
-
-public void agendar(ArrayList<Agenda> agenda, Agenda novoAgendamento) {
-	
-	for (int i = 0; i < agenda.size(); i++) {
-		@SuppressWarnings("unused")
-		Agenda Agendamento = agenda.get(i);
-		Agenda agendamento = null;
-		if(agendamento.getHorario().equals(novoAgendamento()) &&
-		
-		agendamento.getData().equals(novoAgendamento.getData())) {
-			
-		System.out.println("A Data selecionada já está ocupada, escolha outro horário!");
-		
-				return;
- }
-	}	
-	
-		agenda.add(novoAgendamento);
-		System.out.println("Agendamento realizado com sucesso!");
-}
-
-				
-private Object novoAgendamento() {
-	// TODO Auto-generated method stub
-	return null;
-}
-	
-	
 }

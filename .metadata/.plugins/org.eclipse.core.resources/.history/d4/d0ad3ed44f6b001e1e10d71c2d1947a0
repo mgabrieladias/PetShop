@@ -1,0 +1,19 @@
+package pacote3;
+
+public class Bamho extends Servico {
+	
+
+	
+	public String descricao() {
+
+		return "Serviço de banho";
+	}
+
+	
+	public double preco() {
+
+		return 20.0;
+	}
+	
+	
+}

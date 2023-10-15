@@ -1,0 +1,21 @@
+package pacote5;
+
+
+import pacote1.Animal;
+
+public class Main {
+
+
+	public static void main(String[] args) {
+
+		
+		
+		Animal animal1 = new Animal("Thor", "Cachorro", "Pastor Belga", "01/01/2021", "Maria");
+		
+		
+		System.out.println(animal1);
+	
+		
+	}
+
+}

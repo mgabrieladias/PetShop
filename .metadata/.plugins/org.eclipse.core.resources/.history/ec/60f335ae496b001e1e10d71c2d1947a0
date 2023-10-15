@@ -1,0 +1,10 @@
+package pacote3;
+
+
+public abstract class Servico {
+	
+	private String descricao();
+	private double preco();
+
+	
+}

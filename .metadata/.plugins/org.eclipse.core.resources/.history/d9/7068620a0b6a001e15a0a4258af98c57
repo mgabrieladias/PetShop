@@ -1,0 +1,25 @@
+package pacote1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CadastroAnimais {
+	
+	
+	private static List<Animal> animais =new ArrayList<Animal>();
+	
+	/*public CadastroAnimais(){
+		
+		animais = new ArrayList<>();
+		
+	}*/
+	
+	public static void adicionarAnimal(Animal animal) {
+		animais.add(animal);
+	}
+	
+	public List<Animal> getAnimais() {
+		return animais;
+	}
+
+}

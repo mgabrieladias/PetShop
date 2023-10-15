@@ -1,0 +1,64 @@
+package pacote3;
+
+
+public abstract class Servico {
+	
+	public abstract String descricao();
+	public abstract double preco();
+
+	
+	public class Bamho extends Servico {
+		
+
+		
+		public String descricao() {
+
+			return "Serviço de banho";
+		}
+
+		
+		public double preco() {
+
+			return 20.0;
+		}
+		
+		
+	}
+	
+	public class Tosa extends Servico {
+		
+
+		
+		public String descricao() {
+
+			return "Serviço de Tosa";
+		}
+
+		
+		public double preco() {
+
+			return 30.0;
+		}
+		
+		
+	}
+	
+	
+	public class ConsultaVeterinaria extends Servico{
+
+		
+		public String descricao() {
+
+			return "Consulta Veterinária";
+		}
+
+		
+		public double preco() {
+
+			return 50.0;
+		}
+		
+	}
+	
+	
+}

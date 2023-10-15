@@ -1,0 +1,10 @@
+package pacote2;
+
+public class Brinquedo extends Produto {
+
+	public Brinquedo(String nome, String categoria, double preco, int estoque) {
+		super(nome, categoria, preco, estoque);
+		
+
+}
+}

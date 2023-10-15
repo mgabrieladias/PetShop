@@ -1,13 +1,19 @@
 package pacote1;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import pacote3.Servico;
 
 public class Animal {
 	
+
 	private String nome;
 	private String especie;
 	private String raca;
 	private String dataNascimento;
 	private String proprietario;
+	private List<Servico> servicosPrestados;
 	
 	
 	public Animal(String nome, String especie, String raca, String dataNascimento, String proprietario) {
@@ -17,19 +23,9 @@ public class Animal {
 		this.raca = raca;
 		this.dataNascimento = dataNascimento;	
 		this.proprietario = proprietario;
+		this.servicosPrestados = new ArrayList<>();
+
 	}
-
-
-
-	public Animal() {
-		
-		this.nome = "Thor";
-		this.especie = "Cachorro";
-		this.raca = "Pastor Belga";
-		this.dataNascimento = "01/01/2021";
-		this.proprietario = "Maria";
-	}
-
 
 
 	public String getNome() {
@@ -80,11 +76,27 @@ public class Animal {
 	public void setProprietario(String proprietario) {
 		this.proprietario = proprietario;
 	}
-
+	
 
 	public String toString() {
 		return "Nome: " + nome + ", Espécie: " + especie + ", Raça: " + raca + ", Data de Nascimento: " + dataNascimento + ", Proprietario: " + proprietario;
 	
 	}
-}
+
+
+	public void adicionarServico(Servico servico) {
+		
+		servicosPrestados.add(servico);
+		
+		
+	}
+	
+	public List<Servico> getServicosPrestados() {
+		
+		return servicosPrestados;
+		
+	}
+
+
+	}
 

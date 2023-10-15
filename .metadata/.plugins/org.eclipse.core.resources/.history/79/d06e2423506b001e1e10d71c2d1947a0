@@ -1,0 +1,28 @@
+package pacote3;
+
+
+public abstract class Servico {
+	
+	public abstract String descricao();
+	public abstract double preco();
+
+	
+	
+	public class ConsultaVeterinaria extends Servico{
+
+		
+		public String descricao() {
+
+			return "Consulta Veterinária";
+		}
+
+		
+		public double preco() {
+
+			return 50.0;
+		}
+		
+	}
+	
+	
+}

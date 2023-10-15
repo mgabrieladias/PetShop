@@ -1,0 +1,87 @@
+package pacote2;
+
+public abstract class Produto {
+	
+	
+	public String nome;
+	public String categoria;
+	private double preco;
+	private int estoque;
+	
+	
+	public Produto(String nome, String categoria, double preco, int estoque) {
+		super();
+		this.nome = nome;
+		this.categoria = categoria;
+		this.preco = preco;
+		this.estoque = estoque;
+	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public String getCategoria() {
+		return categoria;
+	}
+
+
+	public void setCategoria(String categoria) {
+		this.categoria = categoria;
+	}
+
+
+	public double getPreco() {
+		return preco;
+	}
+
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+
+
+	public int getEstoque() {
+		return estoque;
+	}
+
+	
+	public void incluirEstoque(int quantidade) {
+		
+		estoque = estoque + quantidade;
+		
+	}
+	
+	
+	public void tirarEstoque(int quantidade) {
+		
+		
+		if(quantidade <= estoque) {
+			
+			estoque = estoque - quantidade;
+			
+			
+		} 
+		else
+		{
+			System.out.println("Estoque Indisponivel!!");
+			
+		}
+		
+		
+	}
+	
+	
+	public String toString() {
+		return "Nome: " + nome + ", Categoria: " + categoria + ", Preço: " + preco + ",Estoque: " + estoque;
+	
+	}
+
+}

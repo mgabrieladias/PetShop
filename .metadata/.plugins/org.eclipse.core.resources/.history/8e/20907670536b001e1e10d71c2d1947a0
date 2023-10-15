@@ -1,0 +1,10 @@
+package pacote2;
+
+public class Brinquedo extends Produto {
+
+	public Brinquedo(String "Bolinha", String Brinquedo, double 5, int estoque) {
+		super(nome, categoria, preco, estoque);
+		// TODO Auto-generated constructor stub
+	}
+
+}
