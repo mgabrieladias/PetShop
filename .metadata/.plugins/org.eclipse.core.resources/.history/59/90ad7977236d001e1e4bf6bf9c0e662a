@@ -1,0 +1,70 @@
+package pacote5;
+import pacote4.Agendamento;
+
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import pacote1.Animal;
+import pacote2.Produto;
+import pacote3.Servico;
+import pacote3.Banho;
+import pacote3.ConsultaVeterinaria;
+import pacote3.Tosa;
+public class Main {
+
+
+	public static void main(String[] args) {
+
+		// Criação de Animal//
+		
+		Animal animal1 = new Animal("Thor", "Cachorro", "Pastor Belga", "01/01/2021", "Maria");
+		
+		Servico banho = new Banho();
+		Servico tosa = new Tosa();
+		Servico consulta = new ConsultaVeterinaria();
+		
+		
+		animal1.adicionarServico(banho);
+		animal1.adicionarServico(tosa);
+		animal1.adicionarServico(consulta);
+		
+		System.out.println("Informações sobre o Animal: ");
+		System.out.println(animal1);
+		
+		
+		System.out.println("Serviços Prestados:");
+		
+		for (Servico servico : animal1.getServicosPrestados()) {
+			
+		System.out.println("Descrição so Serviço: " + servico.descricao());	
+		System.out.println("Preço do Serviço: R$ " + servico.preco());
+		
+		
+			
+		}
+	
+		
+		// Criação de pruduto //
+		
+		
+		Produto produto1 = new Produto("Ração para cães", "Alimento", 50.0, 5);
+		
+		produto1.incluirEstoque(5);
+		produto1.tirarEstoque(2);
+		
+		System.out.println("INVENTÁRIO - Estoque de ração: " + produto1.getEstoque());
+		
+		
+	}
+	
+	
+	// Agendamento
+	
+	List<Agendamento> list = new ArrayList<>();
+
+
+	
+	
+}

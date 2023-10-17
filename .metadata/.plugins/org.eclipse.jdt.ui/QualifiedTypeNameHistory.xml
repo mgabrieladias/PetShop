@@ -4,14 +4,16 @@
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
     <fullyQualifiedTypeName name="pacote5.Main"/>
     <fullyQualifiedTypeName name="pacote1.CadastroAnimais"/>
-    <fullyQualifiedTypeName name="pacote1.Animal"/>
     <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="pacote3.Servico"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="pacote3.Banho"/>
     <fullyQualifiedTypeName name="pacote3.Tosa"/>
     <fullyQualifiedTypeName name="pacote3.ConsultaVeterinaria"/>
     <fullyQualifiedTypeName name="pacote2.Produto"/>
+    <fullyQualifiedTypeName name="pacote1.Animal"/>
+    <fullyQualifiedTypeName name="pacote3.Servico"/>
+    <fullyQualifiedTypeName name="pacote4.Agenda"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="pacote4.Agendamento"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

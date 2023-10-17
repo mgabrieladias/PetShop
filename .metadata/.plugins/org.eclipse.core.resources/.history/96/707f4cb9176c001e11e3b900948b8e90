@@ -49,12 +49,4 @@ public class Agendamento {
     public void setHorario(String horario) {
         this.horario = horario;
     }
-
-    @Override
-    public String toString() {
-        return "Agendamento: " + animal +
-                ", servico: " + servico.descricao() +
-                ", data: " + data + '\'' +
-                ", horario: " + horario + '\'';
-    }
 }
